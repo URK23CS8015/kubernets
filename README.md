@@ -25,5 +25,7 @@ kubectl delete deployment myapp
 kubectl delete service myapp
 
 cd "C:\Users\afrin\devops sem lab - 8"
+
 kubectl create deployment myapp --image=nginx --dry-run=client -o yaml > deploy.yaml
+
 kubectl apply -f deploy.yaml
